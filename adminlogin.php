@@ -309,15 +309,15 @@ input[type="password"]
 if(isset($_POST['submit']))
 {
  
- $username= $_POST['malak@project123'];
- $password= $_POST['Autoauto12'];
+ $username= $_POST['user'];
+ $password= $_POST['pass'];
  
 
  $link=mysqli_connect("project123.mysql.database.azure.com","malak@project123","Autoauto12","project") or die($link); 
   $username =mysqli_real_escape_string($link,$username);
   $password =mysqli_real_escape_string($link,$password);
 
-$result=mysqli_query($link,"select * from admin where id='ADMIN' and password='SHAKYA'") or die("failed to query database".mysqli_error($link));
+$result=mysqli_query($link,"select * from admin where id='$username' and password='$password'") or die("failed to query database".mysqli_error($link));
 	
 	if(mysqli_num_rows($result)>0)
 	{
