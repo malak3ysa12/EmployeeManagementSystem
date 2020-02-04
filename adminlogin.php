@@ -309,11 +309,11 @@ input[type="password"]
 if(isset($_POST['submit']))
 {
  
- $username= $_POST['user'];
- $password= $_POST['pass'];
+ $username= $_POST['malak'];
+ $password= $_POST['Autoauto12'];
  
 
- $link=mysqli_connect("localhost","root","","project") or die($link); 
+ $link=mysqli_connect("project123.mysql.database.azure.com","malak","","project") or die($link); 
   $username =mysqli_real_escape_string($link,$username);
   $password =mysqli_real_escape_string($link,$password);
 
