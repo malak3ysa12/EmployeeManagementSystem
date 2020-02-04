@@ -2,7 +2,7 @@
 
 $servername = "project123.mysql.database.azure.com";
 $database = project;
-$username = malak;
+$username = malak@project123;
 $password = Autoauto12;
 
 try {
