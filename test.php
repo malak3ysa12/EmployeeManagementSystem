@@ -1,10 +1,9 @@
 <?php
 
 $servername = "project123.mysql.database.azure.com";
-$database = "project";
-$username = "malak";
-$password = "Autoauto12";
-$charset = "utf8mb4";
+$database = project;
+$username = malak;
+$password = Autoauto12;
 
 try {
 
