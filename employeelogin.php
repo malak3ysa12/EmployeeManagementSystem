@@ -350,8 +350,8 @@ if(isset($_SESSION['username']))
 if(isset($_POST['submit']))
 {
  
- $username= $_POST['user'];
- $password= $_POST['pass'];
+ $username= $_POST['malak'];
+ $password= $_POST['Autoauto12'];
  
 
  $link=mysqli_connect("localhost","root","","project") or die($link); 
@@ -389,7 +389,7 @@ $result=mysqli_query($link,"select * from employee where uname='$username' and p
 	if(isset($_POST['btn']))
 	{
 		$funame = $_POST['funame'];
-		$conn=mysqli_connect("localhost","root","","project") or die("connection failed".mysqli_connect_error());
+		$conn=mysqli_connect("project123.mysql.database.azure.com","malak","","project") or die("connection failed".mysqli_connect_error());
 		$query = "select * from employee where uname like '$funame'";
 		$result = mysqli_query($conn, $query);
 
