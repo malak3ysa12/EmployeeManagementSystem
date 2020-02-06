@@ -2,5 +2,7 @@
     "require": {
         "monolog/monolog": "1.0.*@beta",
         "acme/foo": "@dev"
+        "php" : "^5.5 || ^7.0",
+        "ext-mbstring": "*"
     }
 }
