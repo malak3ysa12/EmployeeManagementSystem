@@ -313,7 +313,7 @@ if(isset($_POST['submit']))
  $password= $_POST['pass'];
  
 
- $link=mysqli_connect("project123.mysql.database.azure.com","malak@project123","Autoauto12","project") or die($link); 
+ $link=mysqli_connect("mysqlservererr.mysql.database.azure.com","malak@mysqlservererr","Autoauto12","project") or die($link); 
   $username =mysqli_real_escape_string($link,$username);
   $password =mysqli_real_escape_string($link,$password);
 
