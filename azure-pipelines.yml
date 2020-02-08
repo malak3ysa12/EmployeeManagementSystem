@@ -33,14 +33,15 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: '**/*.sql'
+    TargetFolder: 'd:\a\r1\a\_malak3ysa12.EmployeeManagementSystem\drop'
 - task: PublishBuildArtifacts@1
   inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: '**/*.sql'
-    TargetFolder: 'd:\a\r1\a\_malak3ysa12.EmployeeManagementSystem\drop\'
+
         
