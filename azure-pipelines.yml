@@ -42,5 +42,5 @@ steps:
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: '**/*.sql'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/drop'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/'
         
