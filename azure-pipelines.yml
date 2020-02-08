@@ -40,7 +40,7 @@ steps:
         publishLocation: 'Container'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Agent.BuildDirectory)'
-    Contents: '*.sql'
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: '**/*.sql'
     TargetFolder: '$(Build.ArtifactStagingDirectory)/drop/'
         
