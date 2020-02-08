@@ -1,0 +1,7 @@
+{
+    "require": {
+        "monolog/monolog": "1.0.*@beta",
+        "php" : "^5.5 || ^7.0",
+        "ext-mbstring": "*"
+    }
+}
