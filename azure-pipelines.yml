@@ -41,6 +41,6 @@ steps:
 - task: PublishBuildArtifacts@2
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: '**/*.sql'
+    Contents: '**/.sql'
     TargetFolder: '$(System.DefaultWorkingDirectory)/_malak3ysa12.EmployeeManagementSystem/drop'
         
