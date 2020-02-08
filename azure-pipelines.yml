@@ -36,12 +36,13 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: '**/*.sql'
-    TargetFolder: 'd:\a\r1\a\_malak3ysa12.EmployeeManagementSystem\drop'
+    Contents: '**\*.sql'
+    TargetFolder: '$(System.DefaultWorkingDirectory)/_malak3ysa12.EmployeeManagementSystem/drop/project.sql'
 - task: PublishBuildArtifacts@1
   inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
+
 
         
