@@ -38,7 +38,7 @@ steps:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
-- task: PublishBuildArtifacts@2
+- task: CopyFiles@1
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: '**/.sql'
