@@ -41,5 +41,5 @@ steps:
 - task: CopyFiles@2
   inputs:
         SourceFolder: '$(Build.SourcesDirectory)'
-        Contents: '**/*.zip'
+        Contents: '*.zip'
         TargetFolder: '$(System.DefaultWorkingDirectory)/_malak3ysa12.EmployeeManagementSystem/drop/'
