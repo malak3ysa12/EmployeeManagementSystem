@@ -42,5 +42,5 @@ steps:
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: '**/*.sql'
-    TargetFolder: 'd:\a\r1\a'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
         
