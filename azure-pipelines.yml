@@ -42,4 +42,4 @@ steps:
   inputs:
         SourceFolder: '$(Build.SourcesDirectory)'
         Contents: '**/*.zip'
-        TargetFolder: '$(Build.ArtifactStagingDirectory)'
+        TargetFolder: '$(System.DefaultWorkingDirectory)/_malak3ysa12.EmployeeManagementSystem/drop/'
