@@ -42,5 +42,5 @@ steps:
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: '**/*.sql'
-    TargetFolder: '$(System.DefaultWorkingDirectory)/_malak3ysa12.EmployeeManagementSystem/drop/'
+    TargetFolder: '$(System.DefaultWorkingDirectory)/_malak3ysa12.EmployeeManagementSystem/drop'
         
