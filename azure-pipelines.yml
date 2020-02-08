@@ -37,7 +37,7 @@ steps:
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: '**/*.sql'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/_malak3ysa12.EmployeeManagementSystem/drop/'
+    TargetFolder: 'd:\a\r1\a'
     OverWrite: true
     flattenFolders: true
 - task: PublishBuildArtifacts@1
