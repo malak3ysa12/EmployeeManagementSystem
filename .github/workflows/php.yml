@@ -39,6 +39,6 @@ jobs:
       with:
         images: malak3ysa/employeemanagementsystem
         registery: docker.io
-         username: ${{ secrets.DOCKERHUB_USERNAME }}
-         password: ${{ secrets.DOCKERHUB_TOKEN }}
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
   
