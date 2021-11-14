@@ -24,7 +24,7 @@ jobs:
       with:
         image: malak3ysa/employeemanagementsystem
         tags: v1, latest
-        registry: dockerhub.io
+        registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
