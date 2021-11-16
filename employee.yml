@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: employee-deployment
   labels:
-    app: nginx
+    app: employee
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: employee
   template:
     metadata:
       labels:
-        app: nginx
+        app: employee
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: employee
+        image: malak3ysa/employeemanagementsystem:latest
         ports:
         - containerPort: 80
