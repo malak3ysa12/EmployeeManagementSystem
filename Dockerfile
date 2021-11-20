@@ -7,5 +7,5 @@ RUN a2enmod rewrite
 # Copy application source
 COPY * /var/www/
 RUN chown -R www-data:www-data /var/www
-
+ENTRYPOINT ["sh", "/usr/src/app/docker-entrypoint.sh"]
 CMD ["start-apache"]
