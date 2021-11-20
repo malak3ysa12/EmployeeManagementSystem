@@ -8,4 +8,5 @@ RUN a2enmod rewrite
 COPY * /var/www/html/
 RUN chown -R www-data:www-data /var/www/html
 RUN ["chmod", "+x", "start-apache"]
+RUN ["chmod", "+x", "/usr/local/bin/docker-php-entrypoint"]
 CMD ["start-apache"]
